@@ -7,6 +7,10 @@
 #   |       |
 #   v       v
 # [Car]  [Motorcycle]
+
+class Vehicle:
+  def __init__
+
 #
 # Each class can simply "pass" for its body. The exercise is about setting up
 # the hierarchy.

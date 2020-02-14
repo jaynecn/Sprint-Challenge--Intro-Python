@@ -76,12 +76,12 @@ print(e)
 print("Names and ages between 27 and 32:")
 f = []
 for i in humans:
-    name_list = str(i.name)
+    name_list = (i.name)
     age_list = (i.age)
     
     if age_list == 27 or age_list == 28 or age_list == 29 or age_list == 30 or age_list == 31 or age_list == 32:
-        new_string = f'{name_list}, {age_list}'
-        print(new_string)
+        new_string = '(' + str(name_list) + ', ' + str(age_list) + ')'
+        second
         f.append(new_string)
 print(f)
 
@@ -103,7 +103,6 @@ print("Square root of ages:")
 import math
 h = []
 for i in humans:
-    print(humans)
     ages_list = (math.sqrt(i.age))
     h.append(ages_list)
 print(h)
