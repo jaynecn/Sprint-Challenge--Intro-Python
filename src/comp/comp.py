@@ -91,7 +91,6 @@ print(f)
 print("All names uppercase:")
 g = []
 new_list = humans.copy()
-print(new_list)
 for i in new_list:
     i.name = (i.name.upper())
     i.age = (i.age + 5)
@@ -102,4 +101,8 @@ print(g)
 print("Square root of ages:")
 import math
 h = []
+for i in humans:
+    print(humans)
+    ages_list = (math.sqrt(i.age))
+    h.append(ages_list)
 print(h)
