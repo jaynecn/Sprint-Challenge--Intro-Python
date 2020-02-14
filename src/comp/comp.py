@@ -75,14 +75,19 @@ print(e)
 # inclusive.
 print("Names and ages between 27 and 32:")
 f = []
+name_array = []
+age_array = []
 for i in humans:
-    name_list = (i.name)
+    
     age_list = (i.age)
     
     if age_list == 27 or age_list == 28 or age_list == 29 or age_list == 30 or age_list == 31 or age_list == 32:
-        new_string = '(' + str(name_list) + ', ' + str(age_list) + ')'
-        second
-        f.append(new_string)
+        
+        name_array.append(f'{i.name}')
+        age_array.append(i.age)
+        
+# answer = list(zip(name_array, age_array))
+f = list(zip(name_array, age_array))
 print(f)
 
 # Write a list comprehension that creates a list of new Humans like the old
