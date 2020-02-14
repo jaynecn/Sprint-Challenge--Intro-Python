@@ -28,11 +28,14 @@ class City:
 # should not be loaded into a City object.
 cities = []
 
-def cityreader():
-  with open('.\src\cityreader\cities.csv')as f:
-  data = csv.reader(f)
-  for row in data:
-        print(row)
+def cityreader(cities=[]):
+  with open("cities.csv", newline="") as cities_data:
+    viewer = csv.reader(cities_data)
+    _ = next(viewer)
+    for info in viewer:
+      cities.append(City(info[0], (info[3]), (info[4])))
+
+  return cities
 
 cityreader(cities)
 
