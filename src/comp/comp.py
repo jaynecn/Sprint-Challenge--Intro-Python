@@ -90,7 +90,8 @@ print(f)
 # The "humans" list should be unmodified.
 print("All names uppercase:")
 g = []
-new_list = humans.copy()
+import copy
+new_list = copy.deepcopy(humans)
 for i in new_list:
     i.name = (i.name.upper())
     i.age = (i.age + 5)
