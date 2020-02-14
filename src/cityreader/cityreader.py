@@ -29,11 +29,14 @@ class City:
 cities = []
 
 def cityreader(cities=[]):
-  with open("cities.csv", newline="") as cities_data:
+  with open("cities.csv", "r") as cities_data:
     viewer = csv.reader(cities_data)
-    _ = next(viewer)
+    line_number = 0
     for info in viewer:
-      cities.append(City(info[0], (info[3]), (info[4])))
+      if line_number == 0:
+        line_number +=1
+      else:
+        cities.append(City(info[0], (info[3]), (info[4])))
 
   return cities
 
