@@ -66,11 +66,12 @@ print(f, "\n")
 
 # I FOUND THIS DIFFICULT
 print("All names uppercase:")
-import copy
-g = copy.deepcopy(humans)
-for i in g:
-    i.name = (i.name.upper())
-    i.age = (i.age + 5)
+g = [Human(human.name.upper(), human.age + 5) for human in humans]
+# import copy
+# g = copy.deepcopy(humans)
+# for i in g:
+#     i.name = (i.name.upper())
+#     i.age = (i.age + 5)
 print(g, "\n")
 
 # Write a list comprehension that contains the square root of all the ages.
