@@ -73,18 +73,6 @@ for i in g:
     i.age = (i.age + 5)
 print(g, "\n")
 
-print(humans)
-
-
-# g = []
-
-# new_list = copy.deepcopy(humans)
-# for i in new_list:
-#     i.name = (i.name.upper())
-#     i.age = (i.age + 5)
-#     g.append(i)
-# print(g)
-
 # Write a list comprehension that contains the square root of all the ages.
 print("Square root of ages:")
 import math
