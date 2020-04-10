@@ -23,23 +23,18 @@ humans = [
 
 # Write a list comprehension that creates a list of names of everyone
 # whose name starts with 'D':
+
 print("Start with D")
-a = []
-for i in humans:
-    new_list = (i.name[0])
-    if new_list == 'D':
-        a.append(i.name)
-print(a)
+start_with_d = [data.name for data in humans if data.name[0] == 'D' ]
+print(start_with_d)
+print("\n")
 
 # Write a list comprehension that creates a list of names of everyone
 # whose name ends in "e".
 print("Ends with e:")
-b = []
-for i in humans:
-    e_list = (i.name[-1])
-    if e_list == 'e':
-        b.append(i.name)
-print(b)
+ends_with_e = [data.name for data in humans if data.name[-1] == 'e']
+print(ends_with_e)
+
 
 # Write a list comprehension that creates a list of names of everyone
 # whose name starts with any letter between 'C' and 'G' inclusive.
