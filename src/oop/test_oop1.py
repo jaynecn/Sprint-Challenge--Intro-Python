@@ -3,7 +3,7 @@ from oop1 import *
 
 class Oop1Tests(unittest.TestCase):
   def setUp(self):
-    self.vehicle = Vehicle()
+    self.vehicle = Vehicle()  
     self.flight_vehicle = FlightVehicle()
     self.ground_vehicle = GroundVehicle()
     self.car = Car()
