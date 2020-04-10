@@ -29,7 +29,7 @@ class City:
 cities = []
 
 def cityreader(cities=[]):
-  with open("cities.csv", "r") as cities_data:
+  with open(".\src\cityreader\cities.csv", "r") as cities_data:
     viewer = csv.reader(cities_data)
     line_number = 0
     for info in viewer:
